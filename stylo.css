@@ -1,0 +1,242 @@
+:root{
+    --title-black:rgb(9, 5, 5);
+    --title-red:rgb(195, 45, 45);   
+    --information:rgb(112, 107, 107);
+    --header:rgb(255, 255, 255);
+    --foot-icon:rgb(130, 122, 122);
+    --foot:rgb(232, 226, 226);
+    --img:rgb(206, 73, 73);
+    /*//////////////////////////////*/
+    --bg:white;
+    --color:black;
+    --color-botton:black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--title-black);
+}
+body.darkmode{
+    background-color: var(--color);
+    color: var(--bg);
+    --color-botton:white;
+ }
+ /* NAV///////////////////////////////////////////*/
+.header{
+display: flex;
+justify-content: start;
+align-items: center;   
+font-weight: bold; 
+position: fixed;
+background: var(--header);
+width: 100%;
+}
+.header .logo img{
+height:50px;
+}   
+.header .nav-links{
+   list-style: none;
+}
+.header .nav-links li{
+   display: inline-block;
+   color: var(--title-black);
+   padding: 0 20px;
+}
+.nav-links li a:hover{
+color: rgb(220, 76, 76);
+}
+.header .nav-links a{
+   font-size: 700;
+   text-decoration: none;
+}
+/* NAV  ////////////////////////////////////////*/
+/*TITULOS*/ 
+ .text-content .title{
+    color: rgb(54, 51, 51);
+
+}
+.text-content .paragraf_text{
+    width: 400px;
+}
+.text-content .price-text{
+    color: rgb(219, 51, 51);
+}
+/*////////////*/
+.content-items{
+    display: flex;
+
+}
+.img-home{
+    background: var(--img);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*//////////////////////////////////////////////////*/
+ /* .img-home{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-bottom:600px;
+    margin-right: 100px;
+}  */
+
+
+.icon-img{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}
+.botons{
+    font-weight: bold;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.botons .btn1{
+    font-size: 1rem;
+    font-weight:800;
+    background: rgb(200, 197, 197);
+    border: none;
+    padding: 20px;
+    margin: 0;
+}
+.botons .btn2{
+    font-weight: 800;
+    background: rgb(37, 36, 36);
+    border: none;
+    margin: 0;
+    padding: 30px;
+    color: white;
+}
+.botons .btn1:hover{
+    background:rgb(145, 138, 138);
+    color: white;
+}
+.botons .btn2:hover{
+    background:rgb(226, 74, 74);
+}
+ 
+.information{
+    color:var(--information);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+}
+.information .info_1{
+    border-right: 1px solid var(--information);
+    margin-right: 10px;
+}
+.information .info_2{
+    border-right: 1px solid var(--information);
+}
+.information .info_3{
+    border-right: 1px solid var(--information);
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+.item-gallery{
+    height:250px;
+    border-radius: 15px;
+    background: rgb(240, 228, 228);
+}
+.item-gallery span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.item-gallery p{
+    color: rgb(77, 76, 76);
+}
+.item-gallery:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: 0.6s ease-out;
+   }
+.foot{
+    background: var(--foot);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    line-height: 50px;
+}
+
+ i{
+    font-size: 1.5rem;
+    color: var(--foot-icon);
+}
+i:hover{
+    color: black;
+}
+.foot_pie{
+    background: var(--foot);
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width:600px) {
+    .content-items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text-content{
+        width: 300px;
+    }
+    .text-content .paragraf_text{
+    text-align: center;
+    width: 200px;
+    }
+    .img-home{ 
+        position: absolute;
+        right: 0;
+        width: 300px;
+        height: 470px;
+
+    }
+  
+    .img{
+        height: 450px;
+        width: 330px;   
+    }
+   .item-gallery:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.6s ease-out;
+   }
+    .information{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:100px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        margin: 0;
+        justify-content: start;
+        align-items:flex-start;
+        gap: 50px;
+        
+    }
+}
+
+
+
+
