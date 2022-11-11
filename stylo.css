@@ -187,22 +187,23 @@ i:hover{
         flex-wrap: wrap;
     }
     .text-content{
-        width: 300px;
+        text-align: center;
+        margin-top: 300px;
+        width: 100%;
     }
     .text-content .paragraf_text{
     text-align: center;
-    width: 200px;
+    width: 100%;
     }
     .img-home{ 
+        margin-top: 100px;
         position: absolute;
         right: 0;
-        width: 300px;
-        height: 470px;
-
+        width: 380px;
+        height: 300px;
     }
-  
     .img{
-        height: 450px;
+        height: 300px;
         width: 330px;   
     }
    .item-gallery:hover{
